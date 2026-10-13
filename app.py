@@ -25,11 +25,11 @@ load_dotenv()
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-TOKEN = os.getenv('8823953179:AAGyOY7rlcNDLwz8rCLrrxZKnv5go_RsKsw')
-OWNER_ID_STR = os.getenv('8518408753')
-ADMIN_ID_STR = os.getenv('8518408753')
-YOUR_USERNAME = os.getenv('@WahidXmode')
-UPDATE_CHANNEL = os.getenv('https://t.me/WahidModeX')
+TOKEN = os.getenv('BOT_TOKEN')
+OWNER_ID_STR = os.getenv('OWNER_ID')
+ADMIN_ID_STR = os.getenv('ADMIN_ID')
+YOUR_USERNAME = os.getenv('YOUR_USERNAME')
+UPDATE_CHANNEL = os.getenv('UPDATE_CHANNEL')
 
 if not TOKEN:
     logger.error("BOT_TOKEN not found in environment variables!")
@@ -46,9 +46,9 @@ except ValueError:
     logger.error("OWNER_ID or ADMIN_ID must be valid integers!")
     raise
 
-YOUR_USERNAME = '@kingwahidafg'
-UPDATE_CHANNEL = 'https://t.me/WahidModeX'
-YOUTUBE_CHANNEL = 'https://youtube.com'
+YOUR_USERNAME = '@Hackerwibes9'
+UPDATE_CHANNEL = 'https://t.me/geniushackertools'
+YOUTUBE_CHANNEL = 'https://youtube.com/@geniushacker29'
 CHANNEL_USERNAME = '@' + UPDATE_CHANNEL.rstrip('/').split('/')[-1]
 
 BASE_DIR = Path(__file__).parent.absolute()
